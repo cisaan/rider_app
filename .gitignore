@@ -1,0 +1,40 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+
+# iOS
+ios/Flutter/.last_build_id
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Generated.xcconfig
+ios/.generated/
+
+# Android
+android/.gradle/
+android/app/build/
+android/local.properties
+android/.idea/
+
+# macOS
+macos/Flutter/ephemeral/
+macos/Flutter/GeneratedPluginRegistrant.swift
+macos/build/
+
+# Web
+web/generated_plugin_registrant.dart
+
+# VS Code
+.vscode/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Misc
+*.log
+.DS_Store
