@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Rider App',
       theme: ThemeData(primarySwatch: Colors.blue),
+      debugShowCheckedModeBanner: false, // Add this line
       home: WelcomeScreen(),
     );
   }
