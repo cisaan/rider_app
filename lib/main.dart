@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Rider App',
       theme: ThemeData(primarySwatch: Colors.blue),
-      debugShowCheckedModeBanner: false, // Add this line
+      debugShowCheckedModeBanner: false,
       home: WelcomeScreen(),
     );
   }
@@ -71,7 +71,6 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Placeholder login logic
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (_) => HomeScreen()),
