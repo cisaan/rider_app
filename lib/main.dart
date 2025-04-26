@@ -16,6 +16,8 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// New line added for testing auto commit again
+// new comment to check the new funtionality
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
 
