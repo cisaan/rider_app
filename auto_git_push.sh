@@ -10,9 +10,11 @@ if [ -f /Users/zeeshann/DevProjects/rider_app/auto_git_push.log ]; then
   fi
 fi
 
-
 # Navigate to your project
 cd /Users/zeeshann/DevProjects/rider_app
+
+# Always pull remote changes first (avoids non-fast-forward and divergence errors)
+git pull --no-rebase origin main
 
 # Create or update a small file to force a daily commit
 echo "Last update: $(date '+%Y-%m-%d %H:%M:%S')" > last_updated.txt
@@ -20,7 +22,7 @@ echo "Last update: $(date '+%Y-%m-%d %H:%M:%S')" > last_updated.txt
 # Stage all changes
 git add .
 
-# Commit with timestamp
+# Commit with timestamp (does nothing if nothing changed)
 git commit -m "chore: daily project health check - $(date '+%Y-%m-%d %H:%M:%S')"
 
 # Push to GitHub
